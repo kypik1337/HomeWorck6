@@ -30,3 +30,12 @@
 #     print(F"будний день пока поработай:= {day}")
 # else:
 #     print(f"отлично сегодня выходной:= {day}")
+
+# и еще к примеру вот такая модернизация через list comprehension
+# было
+# result_list = []
+# for i in new_list:
+#     if i % 1 != 0:
+#         result_list.append(round(i % 1, 2))
+# стало
+# result_list = [round(i % 1, 2) for i in new_list if i % 1 != 0]
